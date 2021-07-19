@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<title>Document</title>
+</head>
+<body>
+	<!-- NavBar -->
+	<div class="nav">
+		<div class="logo">
+			<img src="/img/logo.png">
+		</div>
+		<div class="links">
+			<a>Почему мы?</a>
+			<a href="/our_rooms.html">Номера</a>
+			<a>Отзывы</a>
+			<a>Как нас найти</a>
+		</div>
+	</div>
+	<!-- end -->
+
+
+	<div class="catalog-container">
+		<!-- header -->
+		<div class="catalog-header">
+			<span class="catalog-title">Наши номера</span>
+			<div class="select-container">
+				<button class="dropdown-button js-sort-button">
+					<span class="button-title">
+						<img class="sort" src="/img/ourRooms/up.png">
+						<span class="js-btnTitle">По площади</span>
+					</span>
+					<img class="dropdown-img" src="/img/ourRooms/dropdown-down.png">
+				</button>
+				<ul class="dropdown-menu hidden js-dropdown-menu">
+					<li class="js-dropdown-option">
+						<img class="sort" src="/img/ourRooms/up.png">
+						<span class="js-optionTitle">По площади</span>
+						<img class="dropdown-img" src="/img/ourRooms/dropdown-up.png">
+					</li>
+					<li class="js-dropdown-option">
+						<img class="sort" src="/img/ourRooms/down.png">
+						<span class="js-optionTitle">По площади</span>
+					</li>
+					<li class="js-dropdown-option">
+						<img class="sort" src="/img/ourRooms/up.png">
+						<span class="js-optionTitle">По цене</span>
+					</li>
+					<li class="js-dropdown-option">
+						<img class="sort" src="/img/ourRooms/down.png">
+						<span class="js-optionTitle">По цене</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- end -->
+
+		<!-- main -->
+		<div class="sections">
+			<!-- sort -->
+			<div class="sort-options">
+				<div class="sort-container">
+					<span class="sort-title">Цена за сутки, ₽</span>
+					<div class="sort-price">
+						<input class="min-max-price" type="text" placeholder="от 100">
+						<input class="min-max-price" type="text" placeholder="до 600">
+					</div>
+				</div>
+
+				<div class="sort-container">
+					<span class="sort-title">Площадь</span>
+					<div class="inline">
+						<input class="custom-checkbox" type="checkbox" id="area1">
+						<label for="area1">0,63 м2</label>
+					</div>
+					<div class="inline">
+						<input type="checkbox" id="area2">
+						<label for="area2">0,90 м2</label>
+					</div>
+					<div class="inline">
+						<input type="checkbox" id="area3">
+						<label for="area3">1,13 м2</label>
+					</div>
+					<div class="inline">
+						<input type="checkbox" id="area4">
+						<label for="area4">1,56 м2</label>
+					</div>
+					<div class="inline">
+						<input type="checkbox" id="area5">
+						<label for="area5">2,56 м2</label>
+					</div>
+					<div class="inline">
+						<input type="checkbox" id="area6">
+						<label for="area6">2,88 м2</label>
+					</div>
+				</div>
+
+				<div class="sort-container">
+					<span class="sort-title">Оснащение номера</span>
+					<div class="inline">
+						<input type="checkbox" id="room1">
+						<label for="room1">Пустой номер</label>
+					</div>
+					<div class="inline">
+						<input type="checkbox" id="room2">
+						<label for="room2">Лежак</label>
+					</div>
+					<div class="inline">
+						<input type="checkbox" id="room3">
+						<label for="room3">Когтеточка</label>
+					</div>
+					<div class="inline">
+						<input type="checkbox" id="room4">
+						<label for="room4">Игровой комплекс</label>
+					</div>
+					<div class="inline">
+						<input type="checkbox" id="room5">
+						<label for="room5">Домик</label>
+					</div>
+				</div>
+
+				<button class="save">Применить</button>
+				<button class="discard">Сбросить фильтр</button>
+
+			</div>
+			<!-- end -->
+
+			<!-- catalog rooms -->
+			<div class="catalog-cards">
+				<!-- 1 card -->
+				<div class="catalog-card">
+					<img class="catalog-card-img" src="/img/ourRooms/econom.png">
+					<div class="catalog-card-body">
+						<span class="catalog-card-title">Эконом</span>
+						<span class="mb-15">Размеры (ШхГхВ) - 90х70х180 см</span>
+						<span class="mb-15">Площадь - 0,63 м2</span>
+						<div class="inline-what-in-room">
+							<span>Оснащение номера</span>
+							<div class="what-in-room">
+								<img class="in-room js-tooltip" data-tooltip="Пустой номер" src="/img/ourRooms/empty.png">
+							</div>
+						</div>
+						<div class="inline-price">
+							<span>Цена за сутки:</span> 
+							<span class="price">100₽</span>
+						</div>
+						<button class="btn-number-reserve card-btn">
+							<a href="/room_info.html">
+								<span class="btn-title">Забронировать</span>
+							</a>
+							<img src="/img/mainPage/numbers/btn-paw.png">
+						</button>
+					</div>
+				</div>
+				<!-- end -->
+
+				<!-- 2 card -->
+				<div class="catalog-card">
+					<img class="catalog-card-img" src="/img/ourRooms/econom+.png">
+					<div class="catalog-card-body">
+						<span class="catalog-card-title">Эконом плюс</span>
+						<span class="mb-15">Размеры (ШхГхВ) - 90х100х180 см</span>
+						<span class="mb-15">Площадь - 0,90 м2</span>
+						<div class="inline-what-in-room">
+							<span>Оснащение номера</span>
+							<div class="what-in-room">
+								<img class="in-room js-tooltip" data-tooltip="Лежак" src="/img/ourRooms/lounger.png">
+								<img class="in-room js-tooltip" data-tooltip="Когтеточка" src="/img/ourRooms/scratching-post.png">
+							</div>
+						</div>
+						<div class="inline-price">
+							<span>Цена за сутки:</span> 
+							<span class="price">200₽</span>
+						</div>
+						<button class="btn-number-reserve card-btn">
+							<a href="/room_info.html">
+								<span class="btn-title">Забронировать</span>
+							</a>
+							<img src="/img/mainPage/numbers/btn-paw.png">
+						</button>
+					</div>
+				</div>
+				<!-- end -->
+
+				<!-- 3 card -->
+				<div class="catalog-card">
+					<img class="catalog-card-img" src="/img/ourRooms/comfort.png">
+					<div class="catalog-card-body">
+						<span class="catalog-card-title">Комфорт</span>
+						<span class="mb-15">Размеры (ШхГхВ) - 100х125х180 см</span>
+						<span class="mb-15">Площадь - 1,13 м2</span>
+						<div class="inline-what-in-room">
+							<span>Оснащение номера</span>
+							<div class="what-in-room">
+								<img class="in-room js-tooltip" data-tooltip="Лежак" src="/img/ourRooms/lounger.png">
+								<img class="in-room js-tooltip" data-tooltip="Когтеточка" src="/img/ourRooms/scratching-post.png">
+								<img class="in-room js-tooltip" data-tooltip="Игровой комплекс" data-index="1" src="/img/ourRooms/cat-toys.png">
+							</div>
+						</div>
+						<div class="inline-price">
+							<span>Цена за сутки:</span> 
+							<span class="price">250₽</span>
+						</div>
+						<button class="btn-number-reserve card-btn">
+							<a href="/room_info.html">
+								<span class="btn-title">Забронировать</span>
+							</a>
+							<img src="/img/mainPage/numbers/btn-paw.png">
+						</button>
+					</div>
+				</div>
+				<!-- end -->
+
+				<!-- 4 card -->
+				<div class="catalog-card">
+					<img class="catalog-card-img" src="/img/ourRooms/sut.png">
+					<div class="catalog-card-body">
+						<span class="catalog-card-title">Сьют</span>
+						<span class="mb-15">Размеры (ШхГхВ) - 125х125х180 см</span>
+						<span class="mb-15">Площадь - 1,56 м2</span>
+						<div class="inline-what-in-room">
+							<span>Оснащение номера</span>
+							<div class="what-in-room">
+								<img class="in-room js-tooltip" data-tooltip="Лежак" src="/img/ourRooms/lounger.png">
+								<img class="in-room js-tooltip" data-tooltip="Когтеточка" src="/img/ourRooms/scratching-post.png">
+								<img class="in-room js-tooltip" data-tooltip="Игровой комплекс" data-index="1" src="/img/ourRooms/cat-toys.png">
+							</div>
+						</div>
+						<div class="inline-price">
+							<span>Цена за сутки:</span> 
+							<span class="price">350₽</span>
+						</div>
+						<button class="btn-number-reserve card-btn">
+							<a href="/room_info.html">
+								<span class="btn-title">Забронировать</span>
+							</a>
+							<img src="/img/mainPage/numbers/btn-paw.png">
+						</button>
+					</div>
+				</div>
+				<!-- end -->
+
+				<!-- 5 card -->
+				<div class="catalog-card">
+					<img class="catalog-card-img" src="/img/ourRooms/lux.png">
+					<div class="catalog-card-body">
+						<span class="catalog-card-title">Люкс</span>
+						<span class="mb-15">Размеры (ШхГхВ) - 160х160х180 см</span>
+						<span class="mb-15">Площадь - 2,56 м2</span>
+						<div class="inline-what-in-room">
+							<span>Оснащение номера</span>
+							<div class="what-in-room">
+								<img class="in-room js-tooltip" data-tooltip="Лежак" src="/img/ourRooms/lounger.png">
+								<img class="in-room js-tooltip" data-tooltip="Когтеточка" src="/img/ourRooms/scratching-post.png">
+								<img class="in-room js-tooltip" data-tooltip="Игровой комплекс" data-index="1" src="/img/ourRooms/cat-toys.png">
+								<img class="in-room js-tooltip" data-tooltip="Домик" src="/img/ourRooms/cat-house.png">
+							</div>
+						</div>
+						<div class="inline-price">
+							<span>Цена за сутки:</span> 
+							<span class="price">500₽</span>
+						</div>
+						<button class="btn-number-reserve card-btn">
+							<a href="/room_info.html">
+								<span class="btn-title">Забронировать</span>
+							</a>
+							<img src="/img/mainPage/numbers/btn-paw.png">
+						</button>
+					</div>
+				</div>
+				<!-- end -->
+
+				<!-- 6 card -->
+				<div class="catalog-card">
+					<img class="catalog-card-img" src="/img/ourRooms/super-lux.png">
+					<div class="catalog-card-body">
+						<span class="catalog-card-title">Супер-Люкс</span>
+						<span class="mb-15">Размеры (ШхГхВ) - 180х160х180 см</span>
+						<span class="mb-15">Площадь - 2,88 м2</span>
+						<div class="inline-what-in-room">
+							<span>Оснащение номера</span>
+							<div class="what-in-room">
+								<img class="in-room js-tooltip" data-tooltip="Лежак" src="/img/ourRooms/lounger.png">
+								<img class="in-room js-tooltip" data-tooltip="Когтеточка" src="/img/ourRooms/scratching-post.png">
+								<img class="in-room js-tooltip" data-tooltip="Игровой комплекс" data-index="1" src="/img/ourRooms/cat-toys.png">
+								<img class="in-room js-tooltip" data-tooltip="Домик" src="/img/ourRooms/cat-house.png">
+							</div>
+						</div>
+						<div class="inline-price">
+							<span>Цена за сутки:</span> 
+							<span class="price">600₽</span>
+						</div>
+						<button class="btn-number-reserve card-btn">
+							<a href="/room_info.html">
+								<span class="btn-title">Забронировать</span>
+							</a>
+							<img src="/img/mainPage/numbers/btn-paw.png">
+						</button>
+					</div>
+				</div>
+				<!-- end -->
+			</div>
+			<!-- end -->
+		</div>
+		<!-- end -->
+
+		<!-- action -->
+		<div class="rooms-action">
+			<img class="action" src="/img/ourRooms/action.png">
+			<img class="action-paw" src="/img/ourRooms/paw.png">
+			<div class="action-text">
+				<span class="every-7-day">Каждый 7-й день</span>
+				<span class="free">бесплатно!</span>
+				<span class="description-action">Акция действует при размещении в номерах “Люкс” и “Супер-Люкс”</span>
+				<button class="button-reserve">
+					<span class="button-text">Забронировать</span>
+					<img class="btn-paw" src="/img/paw-for-button.png">
+				</button>
+			</div>
+		</div>
+		<!-- end -->
+
+	</div>
+
+	<!-- where are we? -->
+	<div class="where-are-we">
+		<div class="where-info">
+			<span class="main-title">Как нас найти</span>
+			<span class="second-title">Адрес</span>
+			<span class="info">Санкт-Петербург, ул Большая Конюшенная, д 19</span>
+			<span class="second-title">Режим работы</span>
+			<span class="info">Ежедневно, с 9:00 до 20:00</span>
+			<span class="second-title">Телефон</span>
+			<span class="info">8 (800) 333-55-99</span>
+			<span class="second-title">E-mail</span>
+			<span class="info">info@cat-hotel.ru</span>
+			<span class="second-title">Социальные сети</span>
+			<div class="social-networks">
+				<div class="white-circle">
+					<img class="social-network" src="/img/mainPage/whereAreWe/facebook.png">
+				</div>
+				<div class="white-circle">
+					<img class="social-network" src="/img/mainPage/whereAreWe/inst.png">
+				</div>
+				<div class="white-circle">
+					<img class="social-network" src="/img/mainPage/whereAreWe/vk.png">
+				</div>
+			</div>
+		</div>
+		<div class="map">
+			<div style="position:relative;overflow:hidden;height:100%">
+				<a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a>
+				<a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.323117%2C59.938635&utm_medium=mapframe&utm_source=maps&z=16" style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Конюшенная улица, 19/8 — Яндекс.Карты</a>
+				<iframe src="https://yandex.ru/map-widget/v1/-/CCQpfJb8sD" width="100%" height="100%" frameborder="1" allowfullscreen="true" style="position:relative; border: none;"></iframe>
+			</div>
+		</div>
+	</div>
+	<!-- end -->
+
+	<!-- footer -->
+	<div class="footer">
+		<div class="logo">
+			<img src="/img/logo.png">
+		</div>
+		<div class="links">
+			<a>Почему мы?</a>
+			<a href="/our_rooms.html">Номера</a>
+			<a>Отзывы</a>
+			<a>Как нас найти</a>
+		</div>
+	</div>
+	<div class="line"></div>
+		<div class="footer-info">
+			<div>
+				<img class="c" src="/img/c.png">
+				<span>2019 Все права защищены</span>
+			</div>
+			<span>Политика конфиденциальности</span>
+		</div>
+	<!-- end -->
+
+	<script src="/index.js"></script>
+</body>
+</html>
